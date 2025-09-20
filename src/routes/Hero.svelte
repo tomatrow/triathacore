@@ -11,7 +11,7 @@
 			<p>Find your event, meet your community, and make a difference with us</p>
 			<div class="signup">
 				<input type="email" placeholder="Enter your email" />
-				<button class="button">Sign Up</button>
+				<button class="button button--solid">Sign Up</button>
 			</div>
 		</div>
 	</article>
@@ -37,7 +37,7 @@
 
 	h1 {
 		color: #fff;
-		font-family: 'PP Fuji';
+		font-family: "PP Fuji";
 		font-size: 55px;
 		font-style: normal;
 		font-weight: 700;
