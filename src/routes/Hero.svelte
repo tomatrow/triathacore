@@ -58,7 +58,7 @@
 
 		p {
 			color: #fff;
-			font-family: Inter;
+			font-family: "Sofia Pro";
 			font-size: 20px;
 			font-style: normal;
 			font-weight: 600;

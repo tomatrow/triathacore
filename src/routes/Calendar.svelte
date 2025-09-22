@@ -87,7 +87,7 @@
 		font-feature-settings:
 			"liga" off,
 			"clig" off;
-		font-family: Inter;
+		font-family: "Sofia Pro";
 		font-size: 18.136px;
 		font-style: normal;
 		font-weight: 500;
