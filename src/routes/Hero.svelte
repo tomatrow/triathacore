@@ -22,16 +22,22 @@
 		background: var(--red);
 		display: flex;
 		justify-content: center;
-		padding: 77px 2px;
+		padding: 77px 20px;
 	}
 
 	article {
 		display: flex;
-		max-width: 925px;
+
+		flex-direction: column;
 
 		h1,
 		.cta {
 			flex: 1;
+		}
+
+		@media (min-width: 925px) {
+			flex-direction: row;
+			max-width: 925px;
 		}
 	}
 
