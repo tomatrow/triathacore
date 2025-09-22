@@ -37,7 +37,12 @@
 	.contents {
 		display: flex;
 		gap: 53px;
-		max-width: 845px;
+		flex-direction: column;
+
+		@media (min-width: 845px) {
+			max-width: 845px;
+			flex-direction: row;
+		}
 	}
 
 	article.invitation {
@@ -65,9 +70,11 @@
 		.buttons {
 			display: flex;
 			gap: 14px;
+			flex-wrap: wrap;
 
 			.button {
 				flex: 1;
+				min-width: 10rem;
 			}
 		}
 	}

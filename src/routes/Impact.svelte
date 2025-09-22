@@ -51,7 +51,13 @@
 	.content {
 		display: flex;
 		gap: 43px;
-		max-width: 925px;
+		flex-direction: column-reverse;
+		align-items: center;
+
+		@media (min-width: 925px) {
+			max-width: 925px;
+			flex-direction: row;
+		}
 	}
 
 	article {
@@ -106,6 +112,7 @@
 	}
 
 	img.impact {
+		width: 100%;
 		max-width: 334px;
 		flex-shrink: 0;
 	}

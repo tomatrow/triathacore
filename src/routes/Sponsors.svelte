@@ -43,11 +43,19 @@
 	.image-grid {
 		display: grid;
 		gap: 28px;
-		grid-template-columns: repeat(3, minmax(0, 1fr));
+		grid-template-columns: 1fr;
 
 		img {
 			max-width: 167px;
 			aspect-ratio: 1;
+		}
+
+		@media (min-width: 400px) {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+
+		@media (min-width: 700px) {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
 		}
 	}
 </style>

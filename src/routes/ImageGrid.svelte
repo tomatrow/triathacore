@@ -55,14 +55,25 @@
 
 	.image-grid {
 		display: grid;
-		gap: 47px;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+
+		gap: 20px;
+		grid-template-columns: 1fr 1fr;
 
 		img {
 			border-radius: 20px;
 			aspect-ratio: 1;
 			min-height: 0;
 			object-fit: cover;
+		}
+
+		@media (min-width: 500px) {
+			grid-template-columns: 1fr 1fr 1fr;
+			gap: 32px;
+		}
+
+		@media (min-width: 700px) {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			gap: 47px;
 		}
 	}
 </style>

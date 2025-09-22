@@ -34,8 +34,14 @@
 	.content {
 		display: flex;
 		gap: 50px;
-		max-width: 925px;
 		padding: 18px 20px;
+		flex-direction: column;
+		align-items: center;
+
+		@media (min-width: 925px) {
+			flex-direction: row;
+			max-width: 925px;
+		}
 	}
 
 	article {
@@ -68,6 +74,7 @@
 	}
 
 	img {
-		width: 383px;
+		width: 100%;
+		max-width: 383px;
 	}
 </style>
