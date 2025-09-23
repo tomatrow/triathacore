@@ -1,6 +1,10 @@
 {
 	"$schema": "https://unpkg.com/@sveltia/cms@0.106.3/schema/sveltia-cms.json",
-	"backend": { "name": "github", "repo": "tomatrow/triathacore" },
+	"backend": {
+		"name": "github",
+		"repo": "tomatrow/triathacore",
+		"base_url": "https://sveltia-cms-auth.tomatrow.workers.dev"
+	},
 	"media_folder": "static/media",
 	"public_folder": "/media",
 	"media_libraries": {
