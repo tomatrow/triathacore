@@ -18,7 +18,7 @@
 			>
 				<input type="email" name="EMAIL" required placeholder="Enter your email" />
 				<input
-					class="hidden"
+					class="visually-hidden"
 					type="text"
 					name="b_ada22d22957f9b0b5146cb213_b223cf557d"
 					tabindex="-1"
@@ -65,9 +65,20 @@
 		padding-bottom: 1rem;
 	}
 
-	.hidden {
+	.visually-hidden {
 		position: absolute;
-		left: 5000px;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap; /* prevent line breaks */
+		border: 0;
+
+		position: absolute;
+		bottom: 0;
+		right: 0;
 	}
 
 	.cta {
