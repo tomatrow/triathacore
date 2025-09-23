@@ -108,6 +108,22 @@
 				{ "name": "subtitle", "widget": "text" },
 				{ "name": "images", "widget": "list", "fields": [{ "name": "image", "widget": "image" }] }
 			]
+		},
+		{
+			"name": "sponsors-section",
+			"label": "Sponsors Section",
+			"file": "src/lib/cms_data/sponsors-section.json",
+			"fields": [
+				{ "name": "title", "widget": "string" },
+				{
+					"name": "images",
+					"widget": "list",
+					"fields": [
+						{ "name": "link", "widget": "string" },
+						{ "name": "image", "widget": "image" }
+					]
+				}
+			]
 		}
 	]
 }

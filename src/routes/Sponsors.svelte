@@ -1,15 +1,14 @@
 <script lang="ts">
-	import sponsorImagePlaceholder from "$lib/assets/sponsor-image-placeholder.svg"
+	import sponsorsSection from "$lib/cms_data/sponsors-section.json"
 </script>
 
 <section>
 	<article>
-		<h2>Our Sponsors</h2>
-
+		<h2>{sponsorsSection.title}</h2>
 		<div class="image-grid">
-			{#each Array.from({ length: 10 }) as _, index (index)}
-				<a href="https://redbike.agency" target="_blank">
-					<img src={sponsorImagePlaceholder} alt={index + ""} />
+			{#each sponsorsSection.images as { image, link }, index (index)}
+				<a href={link} target="_blank">
+					<img src={image} alt={index + ""} />
 				</a>
 			{/each}
 		</div>

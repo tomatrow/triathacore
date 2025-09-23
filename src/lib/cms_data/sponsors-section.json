@@ -1,0 +1,45 @@
+{
+  "title": "Sponsors",
+  "images": [
+    {
+      "link": "https://www.acportland.org/",
+      "image": "/media/active-chidlren.webp"
+    },
+    {
+      "link": "https://bellaorganic.com/",
+      "image": "/media/bella-organic.webp"
+    },
+    {
+      "link": "https://mycluckhut.com/",
+      "image": "/media/cluck-hut.webp"
+    },
+    {
+      "link": "https://www.carinasbakery.com/?utm_source=Local&utm_medium=GoogleMaps&utm_content=gmb",
+      "image": "/media/carinas-bakery.webp"
+    },
+    {
+      "link": "https://highfidelityfriends.com/",
+      "image": "/media/hifi-friends.webp"
+    },
+    {
+      "link": "https://www.hoopersuniversity.org/",
+      "image": "/media/hoopers-university.webp"
+    },
+    {
+      "link": "https://www.marginswine.com/",
+      "image": "/media/margins.webp"
+    },
+    {
+      "link": "https://www.parrawineco.com/",
+      "image": "/media/parra-wine-co.webp"
+    },
+    {
+      "link": "https://redbike.agency",
+      "image": "/media/red-bike.webp"
+    },
+    {
+      "link": "https://www.spectrumdesigns.org/",
+      "image": "/media/spectrum-designs.webp"
+    }
+  ]
+}
