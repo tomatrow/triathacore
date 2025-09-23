@@ -8,6 +8,7 @@
 	import Invitation from "./Invitation.svelte"
 	import ImageGrid from "./ImageGrid.svelte"
 	import Sponsors from "./Sponsors.svelte"
+	import Footer from "./Footer.svelte"
 </script>
 
 <Header />
@@ -19,3 +20,4 @@
 <Invitation />
 <ImageGrid />
 <Sponsors />
+<Footer />

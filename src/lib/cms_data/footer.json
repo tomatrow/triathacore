@@ -1,0 +1,18 @@
+{
+  "navItems": [
+    {
+      "label": "Instagram",
+      "link": "https://www.instagram.com/triathacore",
+      "style": "plain"
+    },
+    {
+      "label": "GoFundMe",
+      "link": "https://www.gofundme.com/f/support-team-triathacores-inclusive-racing",
+      "style": "plain"
+    },
+    {
+      "label": "Events",
+      "link": "https://luma.com/triathacore"
+    }
+  ]
+}
