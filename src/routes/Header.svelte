@@ -3,8 +3,18 @@
 	import { resolve } from "$app/paths"
 	import Logo from "$lib/assets/Logo.svelte"
 	import headerData from "$lib/cms_data/header.json"
+	import { fly } from "svelte/transition"
+	import { quartOut } from "svelte/easing"
 
 	let isMenuOpen = $state(false)
+
+	$effect(() => {
+		if (isMenuOpen) {
+			document.body.classList.add("no-scroll")
+		} else {
+			document.body.classList.remove("no-scroll")
+		}
+	})
 </script>
 
 <section>
@@ -18,7 +28,7 @@
 		</button>
 
 		{#if isMenuOpen}
-			<div class="mobile-links">
+			<div class="mobile-links" transition:fly={{ x: -500, easing: quartOut }}>
 				<a class="mobile-logo" href={resolve("/")}>
 					<Logo />
 				</a>
@@ -88,7 +98,7 @@
 			padding: 20px;
 			align-items: flex-start;
 			justify-content: center;
-			position: absolute;
+			position: fixed;
 			inset: 0;
 			background: var(--red);
 			z-index: 1000;
@@ -112,6 +122,12 @@
 
 		@media (min-width: 700px) {
 			display: flex;
+		}
+	}
+
+	:global {
+		.no-scroll {
+			overflow: hidden;
 		}
 	}
 </style>
