@@ -18,6 +18,30 @@
 			"fields": []
 		},
 		{
+			"name": "header",
+			"label": "Header",
+			"file": "src/lib/cms_data/header.json",
+			"fields": [
+				{
+					"name": "navItems",
+					"label": "Nav Items",
+					"widget": "list",
+					"fields": [
+						{ "name": "label", "widget": "string" },
+						{ "name": "link", "widget": "string" },
+						{
+							"name": "style",
+							"widget": "select",
+							"options": [
+								{ "label": "Plain", "value": "plain" },
+								{ "label": "Button", "value": "button" }
+							]
+						}
+					]
+				}
+			]
+		},
+		{
 			"name": "hero-section",
 			"label": "Hero Section",
 			"file": "src/lib/cms_data/hero-section.json",

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Menu, X } from "@lucide/svelte"
 	import logo from "$lib/assets/logo.svg"
+	import headerData from "$lib/cms_data/header.json"
 
 	let isMenuOpen = $state(false)
 </script>
@@ -20,13 +21,15 @@
 				<a class="mobile-logo" href="/">
 					<img src={logo} alt="Triathacore Logo" />
 				</a>
-				<a class="link" target="_blank" href="https://luma.com/triathacore">Events</a>
-				<a class="link" target="_blank" href="mailto:triathacore@gmail.com">Contact</a>
-				<a
-					class="button button--solid"
-					href="https://www.gofundme.com/f/support-team-triathacores-inclusive-racing?attribution_id=sl:5776503b-941d-4946-ae04-9cb32e2fc8d8&lang=en_US&ts=1758334116&utm_campaign=fp_sharesheet&utm_content=amp13_c-amp17_control&utm_medium=customer&utm_source=copy_link"
-					>Donate Now</a
-				>
+
+				{#each headerData.navItems as navItem, index (index)}
+					{#if navItem.style === "plain"}
+						<a class="link" target="_blank" href={navItem.link}>{navItem.label}</a>
+					{:else if navItem.style === "button"}
+						<a class="button button--solid" href={navItem.link}>{navItem.label}</a>
+					{/if}
+				{/each}
+
 				<button class="mobile-close-button" onclick={() => (isMenuOpen = false)}>
 					<X />
 				</button>
@@ -34,13 +37,13 @@
 		{/if}
 
 		<div class="desktop-links">
-			<a class="link" target="_blank" href="https://luma.com/triathacore">Events</a>
-			<a class="link" target="_blank" href="mailto:triathacore@gmail.com">Contact</a>
-			<a
-				class="button button--solid"
-				href="https://www.gofundme.com/f/support-team-triathacores-inclusive-racing?attribution_id=sl:5776503b-941d-4946-ae04-9cb32e2fc8d8&lang=en_US&ts=1758334116&utm_campaign=fp_sharesheet&utm_content=amp13_c-amp17_control&utm_medium=customer&utm_source=copy_link"
-				>Donate Now</a
-			>
+			{#each headerData.navItems as navItem, index (index)}
+				{#if navItem.style === "plain"}
+					<a class="link" target="_blank" href={navItem.link}>{navItem.label}</a>
+				{:else if navItem.style === "button"}
+					<a class="button button--solid" href={navItem.link}>{navItem.label}</a>
+				{/if}
+			{/each}
 		</div>
 	</header>
 </section>
