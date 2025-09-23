@@ -77,18 +77,28 @@
 
 	section {
 		.mobile-menu-button {
-			color: white;
+			color: var(--white);
+			transition: color 200ms ease-out;
 
 			@media (min-width: 700px) {
 				display: none;
 			}
+
+			&:hover {
+				color: var(--black);
+			}
 		}
 
 		.mobile-close-button {
-			color: white;
+			color: var(--white);
 			position: absolute;
+			transition: color 200ms ease-out;
 			top: 2rem;
 			right: 2rem;
+
+			&:hover {
+				color: var(--black);
+			}
 		}
 
 		.mobile-links {
