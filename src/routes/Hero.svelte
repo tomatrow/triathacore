@@ -9,10 +9,23 @@
 		</h1>
 		<div class="cta">
 			<p>{heroSection.subtitle}</p>
-			<div class="signup">
-				<input type="email" placeholder="Enter your email" />
-				<button class="button button--solid">Sign Up</button>
-			</div>
+			<form
+				class="signup"
+				method="post"
+				action="https://gmail.us7.list-manage.com/subscribe/post?u=ada22d22957f9b0b5146cb213&amp;id=b223cf557d&amp;f_id=0026c0e1f0"
+				name="mc-embedded-subscribe-form"
+				target="_blank"
+			>
+				<input type="email" name="EMAIL" required placeholder="Enter your email" />
+				<input
+					class="hidden"
+					type="text"
+					name="b_ada22d22957f9b0b5146cb213_b223cf557d"
+					tabindex="-1"
+					value=""
+				/>
+				<button class="button button--solid" type="submit">Sign Up</button>
+			</form>
 		</div>
 	</article>
 </section>
@@ -50,6 +63,11 @@
 		line-height: 50px;
 		letter-spacing: -0.275px;
 		padding-bottom: 1rem;
+	}
+
+	.hidden {
+		position: absolute;
+		left: 5000px;
 	}
 
 	.cta {
