@@ -1,0 +1,36 @@
+{
+	"$schema": "https://unpkg.com/@sveltia/cms@0.106.3/schema/sveltia-cms.json",
+	"backend": {
+		"name": "github",
+		"repo": "tomatrow/triathacore"
+	},
+	"media_folder": "static/media",
+	"media_libraries": {
+		"stock_assets": {
+			"providers": []
+		}
+	},
+	"singletons": [
+		{
+			"name": "general",
+			"label": "General",
+			"file": "src/lib/cms_data/general.json",
+			"fields": []
+		},
+		{
+			"name": "hero-section",
+			"label": "Hero Section",
+			"file": "src/lib/cms_data/hero-section.json",
+			"fields": [
+				{
+					"name": "title",
+					"widget": "text"
+				},
+				{
+					"name": "subtitle",
+					"widget": "text"
+				}
+			]
+		}
+	]
+}

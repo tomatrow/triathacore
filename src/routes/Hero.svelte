@@ -1,14 +1,14 @@
 <script lang="ts">
+	import heroSection from "$lib/cms_data/hero-section.json"
 </script>
 
 <section>
 	<article>
 		<h1>
-			<span>RUN, RIDE, RACE</span>
-			<span>WITH A PURPOSE</span>
+			{heroSection.title}
 		</h1>
 		<div class="cta">
-			<p>Find your event, meet your community, and make a difference with us</p>
+			<p>{heroSection.subtitle}</p>
 			<div class="signup">
 				<input type="email" placeholder="Enter your email" />
 				<button class="button button--solid">Sign Up</button>
@@ -47,13 +47,9 @@
 		font-size: 55px;
 		font-style: normal;
 		font-weight: 700;
-		line-height: 88%; /* 48.4px */
+		line-height: 50px;
 		letter-spacing: -0.275px;
 		padding-bottom: 1rem;
-
-		display: flex;
-		flex-direction: column;
-		gap: 1rem;
 	}
 
 	.cta {
