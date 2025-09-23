@@ -82,7 +82,7 @@
 		font-weight: 700;
 		line-height: 40px; /* 35.2px */
 		letter-spacing: -0.2px;
-		white-space: pre;
+		white-space: pre-wrap;
 	}
 
 	p {

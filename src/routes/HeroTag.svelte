@@ -13,7 +13,7 @@
 		font-style: normal;
 		font-weight: 700;
 		line-height: 40px;
-		white-space: pre;
+		white-space: pre-wrap;
 		letter-spacing: -0.2px;
 		padding: 32px 20px;
 	}
