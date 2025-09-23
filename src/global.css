@@ -265,11 +265,26 @@ h6 {
 		background: transparent;
 		color: var(--white);
 		border: 2px solid var(--white);
+		transition: all 200ms ease-out;
+
+		&:hover {
+			background: var(--black);
+			color: var(--white);
+			border: 2px solid transparent;
+		}
 	}
 
 	&.button--solid {
 		background: var(--black);
 		color: var(--white);
+		border: 2px solid transparent;
+		transition: all 200ms ease-out;
+
+		&:hover {
+			background: transparent;
+			color: var(--white);
+			border: 2px solid var(--white);
+		}
 	}
 }
 
@@ -281,6 +296,11 @@ h6 {
 	font-weight: 500;
 	line-height: 145%; /* 23.2px */
 	letter-spacing: -0.08px;
+	transition: 200ms opacity ease-out;
+
+	&:hover {
+		opacity: 0.8;
+	}
 }
 
 /*** end app specific styles ***/
