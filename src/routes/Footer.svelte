@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { resolve } from "$app/paths"
 	import footerData from "$lib/cms_data/footer.json"
-	import logo from "$lib/assets/logo.svg"
+	import Logo from "$lib/assets/Logo.svelte"
 </script>
 
 <footer>
 	<nav>
 		<a href={resolve("/")}>
-			<img src={logo} alt="Triathacore Logo" />
+			<Logo />
 		</a>
 
 		<div class="nav-links">
