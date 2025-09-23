@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from "$app/paths"
 	import impactSection from "$lib/cms_data/impact-section.json"
 	import lightning from "$lib/assets/lightning.png"
 	import heart from "$lib/assets/heart.png"
@@ -7,7 +8,7 @@
 
 <section>
 	<div class="content">
-		<img class="impact" src={impactSection.image} alt="" />
+		<img class="impact" src={resolve(impactSection.image)} alt="" />
 		<article>
 			<h3>{impactSection.subtitle}</h3>
 			<h2>{impactSection.title}</h2>

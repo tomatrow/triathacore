@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from "$app/paths"
 	import visionSection from "$lib/cms_data/vision-section.json"
 </script>
 
@@ -9,7 +10,7 @@
 			<h2>{visionSection.title}</h2>
 			<p>{visionSection.text}</p>
 		</article>
-		<img src={visionSection.image} alt="" />
+		<img src={resolve(visionSection.image)} alt="" />
 	</div>
 </section>
 

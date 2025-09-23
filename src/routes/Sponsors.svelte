@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from "$app/paths"
 	import sponsorsSection from "$lib/cms_data/sponsors-section.json"
 </script>
 
@@ -8,7 +9,7 @@
 		<div class="image-grid">
 			{#each sponsorsSection.images as { image, link }, index (index)}
 				<a href={link} target="_blank">
-					<img src={image} alt={index + ""} />
+					<img src={resolve(image)} alt={index + ""} />
 				</a>
 			{/each}
 		</div>
