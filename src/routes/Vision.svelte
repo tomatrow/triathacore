@@ -1,27 +1,15 @@
 <script lang="ts">
-	import vision from "$lib/assets/vision.png"
+	import visionSection from "$lib/cms_data/vision-section.json"
 </script>
 
 <section>
 	<div class="content">
 		<article>
-			<h3>Our Vision</h3>
-
-			<h2>
-				<span> An Inclusive Community </span>
-				<span> For All </span>
-			</h2>
-
-			<p>
-				My name is Corey. As a triathlete and a father of a young boy with autism, my passions led
-				to a vision: to create a fun, safe space where athletes of all abilities can compete
-				together. Triathacore was born from that love. We are walkers, runners, cyclists, and
-				swimmers. We are Moms, Dads, and weekend warriors. And most importantly, we are a community
-				with one goal in common: to pay it forward.
-			</p>
+			<h3>{visionSection.subtitle}</h3>
+			<h2>{visionSection.title}</h2>
+			<p>{visionSection.text}</p>
 		</article>
-
-		<img src={vision} alt="" />
+		<img src={visionSection.image} alt="" />
 	</div>
 </section>
 
@@ -60,16 +48,14 @@
 		}
 
 		h2 {
-			display: flex;
-			flex-direction: column;
-
 			color: #000;
 			font-family: "PP Fuji";
 			font-size: 40px;
 			font-style: normal;
 			font-weight: 700;
-			line-height: 88%; /* 35.2px */
+			line-height: 40px; /* 35.2px */
 			letter-spacing: -0.2px;
+			white-space: pre;
 		}
 	}
 

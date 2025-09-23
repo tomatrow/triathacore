@@ -55,6 +55,31 @@
 				{ "name": "image", "widget": "image" },
 				{ "name": "imageSubtext", "widget": "text" }
 			]
+		},
+		{
+			"name": "vision-section",
+			"label": "Vision Section",
+			"file": "src/lib/cms_data/vision-section.json",
+			"fields": [
+				{ "name": "subtitle", "widget": "string" },
+				{ "name": "title", "widget": "text" },
+				{ "name": "text", "widget": "text" },
+				{ "name": "image", "widget": "image" }
+			]
+		},
+		{
+			"name": "impact-section",
+			"label": "Impact Section",
+			"file": "src/lib/cms_data/impact-section.json",
+			"fields": [
+				{ "name": "subtitle", "widget": "string" },
+				{ "name": "title", "widget": "text" },
+				{ "name": "text", "widget": "text" },
+				{ "name": "bulletOne", "widget": "text" },
+				{ "name": "bulletTwo", "widget": "text" },
+				{ "name": "bulletThree", "widget": "text" },
+				{ "name": "image", "widget": "image" }
+			]
 		}
 	]
 }

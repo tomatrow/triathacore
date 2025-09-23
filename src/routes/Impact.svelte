@@ -1,5 +1,5 @@
 <script lang="ts">
-	import impact from "$lib/assets/impact.png"
+	import impactSection from "$lib/cms_data/impact-section.json"
 	import lightning from "$lib/assets/lightning.png"
 	import heart from "$lib/assets/heart.png"
 	import fist from "$lib/assets/fist.png"
@@ -7,35 +7,22 @@
 
 <section>
 	<div class="content">
-		<img class="impact" src={impact} alt="" />
-
+		<img class="impact" src={impactSection.image} alt="" />
 		<article>
-			<h3>Our Impact</h3>
-
-			<h2>
-				<span>Racing to Pay </span>
-				<span>It Forward</span>
-			</h2>
-
-			<p>
-				For every race or event we participate in, we pay it forward to a local or national
-				non-profit. Your participation isn’t just a workout; it’s a powerful act of community
-				support. When you join us, you help us to:
-			</p>
-
+			<h3>{impactSection.subtitle}</h3>
+			<h2>{impactSection.title}</h2>
+			<p>{impactSection.text}</p>
 			<div class="row">
 				<img src={lightning} alt="" />
-				<p>Empower children by giving them a voice and a space to thrive.</p>
+				<p>{impactSection.bulletOne}</p>
 			</div>
-
 			<div class="row">
 				<img src={heart} alt="" />
-				<p>Support local businesses and non-profits by connecting them through our events.</p>
+				<p>{impactSection.bulletTwo}</p>
 			</div>
-
 			<div class="row">
 				<img src={fist} alt="" />
-				<p>Support local businesses and non-profits by connecting them through our events.</p>
+				<p>{impactSection.bulletThree}</p>
 			</div>
 		</article>
 	</div>
@@ -92,11 +79,9 @@
 		font-size: 40px;
 		font-style: normal;
 		font-weight: 700;
-		line-height: 88%; /* 35.2px */
+		line-height: 40px; /* 35.2px */
 		letter-spacing: -0.2px;
-
-		display: flex;
-		flex-direction: column;
+		white-space: pre;
 	}
 
 	p {
