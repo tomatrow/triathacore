@@ -80,6 +80,24 @@
 				{ "name": "bulletThree", "widget": "text" },
 				{ "name": "image", "widget": "image" }
 			]
+		},
+		{
+			"name": "invitation-section",
+			"label": "Invitation Section",
+			"file": "src/lib/cms_data/invitation-section.json",
+			"fields": [
+				{ "name": "eventsSubtitle", "widget": "string" },
+				{ "name": "eventsTitle", "widget": "string" },
+				{ "name": "eventsText", "widget": "text" },
+				{ "name": "eventsButtonText", "widget": "string" },
+				{ "name": "eventsButtonLink", "widget": "string" },
+				{ "name": "partnerTitle", "widget": "string" },
+				{ "name": "partnerText", "widget": "text" },
+				{ "name": "leftPartnerButtonText", "widget": "string" },
+				{ "name": "leftPartnerButtonLink", "widget": "string" },
+				{ "name": "rightPartnerButtonText", "widget": "string" },
+				{ "name": "rightPartnerButtonLink", "widget": "string" }
+			]
 		}
 	]
 }

@@ -5,7 +5,7 @@
 	import HeroTag from "./HeroTag.svelte"
 	import Vision from "./Vision.svelte"
 	import Impact from "./Impact.svelte"
-	import Calendar from "./Calendar.svelte"
+	import Invitation from "./Invitation.svelte"
 	import ImageGrid from "./ImageGrid.svelte"
 	import Sponsors from "./Sponsors.svelte"
 </script>
@@ -16,6 +16,6 @@
 <HeroTag />
 <Vision />
 <Impact />
-<Calendar />
+<Invitation />
 <ImageGrid />
 <Sponsors />

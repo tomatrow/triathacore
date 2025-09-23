@@ -1,26 +1,34 @@
+<script lang="ts">
+	import invitationSection from "$lib/cms_data/invitation-section.json"
+</script>
+
 <section>
 	<div class="contents">
 		<article class="invitation">
-			<h3>Your Invitation</h3>
-			<h2>Join the TriathaCrew</h2>
-			<p>
-				We invite you to join us on any one of our monthly rides, runs, and events. Everyone is
-				welcome—from seasoned athletes to families just looking to get active together. Check out
-				our calendar for local meet-ups and races.
-			</p>
-			<a class="button button--solid" href="#">View Events Calendar</a>
+			<h3>{invitationSection.eventsSubtitle}</h3>
+			<h2>{invitationSection.eventsTitle}</h2>
+			<p>{invitationSection.eventsText}</p>
+			<a class="button button--solid" target="_blank" href={invitationSection.eventsButtonLink}
+				>{invitationSection.eventsButtonText}</a
+			>
 		</article>
 
 		<article class="partner">
-			<h2>Partner with Us</h2>
-			<p>
-				Are you an organization inspired to build a brighter community for all? We are currently
-				looking for supporters and partners to help continue to make our vision a reality. Join us
-				in making a sustainable social impact.
-			</p>
+			<h2>{invitationSection.partnerTitle}</h2>
+			<p>{invitationSection.partnerText}</p>
 			<div class="buttons">
-				<a class="button button--clear" href="#">Donate Now</a>
-				<a class="button button--solid" href="#">Become a Partner</a>
+				<a
+					class="button button--clear"
+					target="_blank"
+					href={invitationSection.leftPartnerButtonLink}
+					>{invitationSection.leftPartnerButtonText}</a
+				>
+				<a
+					class="button button--solid"
+					target="_blank"
+					href={invitationSection.rightPartnerButtonLink}
+					>{invitationSection.rightPartnerButtonText}</a
+				>
 			</div>
 		</article>
 	</div>
