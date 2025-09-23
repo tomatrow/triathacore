@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Menu, X } from "@lucide/svelte"
+	import { resolve } from "$app/paths"
 	import logo from "$lib/assets/logo.svg"
 	import headerData from "$lib/cms_data/header.json"
 
@@ -8,7 +9,7 @@
 
 <section>
 	<header>
-		<a href="/">
+		<a href={resolve("/")}>
 			<img src={logo} alt="Triathacore Logo" />
 		</a>
 
@@ -18,7 +19,7 @@
 
 		{#if isMenuOpen}
 			<div class="mobile-links">
-				<a class="mobile-logo" href="/">
+				<a class="mobile-logo" href={resolve("/")}>
 					<img src={logo} alt="Triathacore Logo" />
 				</a>
 
