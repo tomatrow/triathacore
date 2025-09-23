@@ -98,6 +98,16 @@
 				{ "name": "rightPartnerButtonText", "widget": "string" },
 				{ "name": "rightPartnerButtonLink", "widget": "string" }
 			]
+		},
+		{
+			"name": "image-grid-section",
+			"label": "Community Image Grid Section",
+			"file": "src/lib/cms_data/image-grid-section.json",
+			"fields": [
+				{ "name": "title", "widget": "text" },
+				{ "name": "subtitle", "widget": "text" },
+				{ "name": "images", "widget": "list", "fields": [{ "name": "image", "widget": "image" }] }
+			]
 		}
 	]
 }

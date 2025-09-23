@@ -1,22 +1,14 @@
 <script lang="ts">
-	import communityImagePlaceholder from "$lib/assets/community-image-placeholder.jpg"
+	import imageGridSection from "$lib/cms_data/image-grid-section.json"
 </script>
 
 <section>
 	<article>
-		<h2>Creating a Brighter Community for All</h2>
-
-		<div>
-			<p>
-				"This is more than a team. It’s a family. Triathacore gave us a place to be active together
-				and truly belong. It’s made a world of difference for our son."
-			</p>
-			<p>－ Laura B., Parent & Runner</p>
-		</div>
-
+		<h2>{imageGridSection.title}</h2>
+		<p>{imageGridSection.subtitle}</p>
 		<div class="image-grid">
-			{#each Array.from({ length: 8 }) as _, index (index)}
-				<img src={communityImagePlaceholder} alt={_ + ""} />
+			{#each imageGridSection.images as { image }, index (index)}
+				<img src={image} alt={index + ""} />
 			{/each}
 		</div>
 	</article>
@@ -51,6 +43,8 @@
 		line-height: 160%;
 		letter-spacing: 0%;
 		text-align: center;
+		max-width: 700px;
+		white-space: pre-wrap;
 	}
 
 	.image-grid {
