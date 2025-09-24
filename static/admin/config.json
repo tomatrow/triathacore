@@ -20,10 +20,20 @@
 	},
 	"singletons": [
 		{
-			"name": "general",
-			"label": "General",
-			"file": "src/lib/cms_data/general.json",
-			"fields": []
+			"name": "seo",
+			"label": "SEO",
+			"file": "src/lib/cms_data/seo.json",
+			"fields": [
+				{ "name": "siteName", "widget": "string" },
+				{ "name": "siteDescription", "widget": "string" },
+				{ "name": "pageTitle", "widget": "string" },
+				{ "name": "pageDescription", "widget": "string" },
+				{ "name": "pageCanonicalUrl", "widget": "string" },
+				{ "name": "ogImage", "widget": "image" },
+				{ "name": "ogImageAlt", "widget": "string" },
+				{ "name": "ogImageWidth", "widget": "number", "min": 0 },
+				{ "name": "ogImageHeight", "widget": "number", "min": 0 }
+			]
 		},
 		{
 			"name": "header",

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import PageMetaTags from "$lib/PageMetaTags.svelte"
 	import Header from "./Header.svelte"
 	import Hero from "./Hero.svelte"
 	import HeroImages from "./HeroImages.svelte"
@@ -10,6 +11,8 @@
 	import Sponsors from "./Sponsors.svelte"
 	import Footer from "./Footer.svelte"
 </script>
+
+<PageMetaTags />
 
 <Header />
 <Hero />
