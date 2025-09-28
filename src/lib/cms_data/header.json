@@ -11,13 +11,13 @@
       "style": "plain"
     },
     {
-      "label": "Donate now",
-      "link": "https://www.gofundme.com/f/support-team-triathacores-inclusive-racing",
+      "label": "Blog",
+      "link": "https://triathacore.wordpress.com/",
       "style": "button"
     },
     {
-      "label": "Blog",
-      "link": "https://triathacore.wordpress.com/",
+      "label": "Donate now",
+      "link": "https://www.gofundme.com/f/support-team-triathacores-inclusive-racing",
       "style": "button"
     }
   ]
