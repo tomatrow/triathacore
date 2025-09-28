@@ -1,21 +1,24 @@
 {
-	"navItems": [
-		{
-			"label": "Events",
-			"link": "https://luma.com/triathacore",
-			"style": "plain"
-		},
-
-		{
-			"label": "Contact",
-			"link": "mailto:triathacore@gmail.com",
-			"style": "plain"
-		},
-
-		{
-			"label": "Donate now",
-			"link": "https://www.gofundme.com/f/support-team-triathacores-inclusive-racing",
-			"style": "button"
-		}
-	]
+  "navItems": [
+    {
+      "label": "Events",
+      "link": "https://luma.com/triathacore",
+      "style": "plain"
+    },
+    {
+      "label": "Contact",
+      "link": "mailto:triathacore@gmail.com",
+      "style": "plain"
+    },
+    {
+      "label": "Donate now",
+      "link": "https://www.gofundme.com/f/support-team-triathacores-inclusive-racing",
+      "style": "button"
+    },
+    {
+      "label": "Blog",
+      "link": "https://triathacore.wordpress.com/",
+      "style": "button"
+    }
+  ]
 }
