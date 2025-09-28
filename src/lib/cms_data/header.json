@@ -13,7 +13,7 @@
     {
       "label": "Blog",
       "link": "https://triathacore.wordpress.com/",
-      "style": "button"
+      "style": "plain"
     },
     {
       "label": "Donate now",
