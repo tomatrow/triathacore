@@ -6,6 +6,7 @@
 	import HeroTag from "./HeroTag.svelte"
 	import Vision from "./Vision.svelte"
 	import Impact from "./Impact.svelte"
+	import Partners from "./Partners.svelte"
 	import Invitation from "./Invitation.svelte"
 	import ImageGrid from "./ImageGrid.svelte"
 	import Sponsors from "./Sponsors.svelte"
@@ -20,6 +21,7 @@
 <HeroTag />
 <Vision />
 <Impact />
+<Partners />
 <Invitation />
 <ImageGrid />
 <Sponsors />

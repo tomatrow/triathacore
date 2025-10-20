@@ -1,5 +1,5 @@
 <script lang="ts">
-	import imageGridSection from "$lib/cms_data/image-grid-section.json"
+	import imageGridSection from "$lib/cms_data/partners-section.json"
 	import { ImageGrid } from "$lib/components"
 </script>
 

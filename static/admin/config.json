@@ -96,6 +96,16 @@
 			]
 		},
 		{
+			"name": "partners-section",
+			"label": "Partners Section",
+			"file": "src/lib/cms_data/partners-section.json",
+			"fields": [
+				{ "name": "title", "widget": "text" },
+				{ "name": "subtitle", "widget": "text" },
+				{ "name": "images", "widget": "list", "fields": [{ "name": "image", "widget": "image" }] }
+			]
+		},
+		{
 			"name": "invitation-section",
 			"label": "Invitation Section",
 			"file": "src/lib/cms_data/invitation-section.json",
