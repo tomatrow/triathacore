@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { resolve } from "$app/paths"
 	import imageGridSection from "$lib/cms_data/image-grid-section.json"
 </script>
 
@@ -9,7 +8,7 @@
 		<p>{imageGridSection.subtitle}</p>
 		<div class="image-grid">
 			{#each imageGridSection.images as { image }, index (index)}
-				<img src={resolve(image)} alt={index + ""} />
+				<img src={image} alt={index + ""} />
 			{/each}
 		</div>
 	</article>
