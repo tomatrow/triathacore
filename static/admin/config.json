@@ -102,7 +102,14 @@
 			"fields": [
 				{ "name": "title", "widget": "text" },
 				{ "name": "subtitle", "widget": "text" },
-				{ "name": "images", "widget": "list", "fields": [{ "name": "image", "widget": "image" }] }
+				{
+					"name": "images",
+					"widget": "list",
+					"fields": [
+						{ "name": "image", "widget": "image" },
+						{ "name": "link", "widget": "string", "required": false }
+					]
+				}
 			]
 		},
 		{

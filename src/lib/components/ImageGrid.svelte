@@ -6,7 +6,7 @@
 	}: {
 		title: string
 		subtitle: string
-		images: { image: string }[]
+		images: { image: string; link?: string }[]
 	} = $props()
 </script>
 
@@ -15,8 +15,14 @@
 		<h2>{title}</h2>
 		<p>{subtitle}</p>
 		<div class="image-grid">
-			{#each images as { image }, index (index)}
-				<img src={image} alt={index + ""} />
+			{#each images as { image, link } (image)}
+				{#if link}
+					<a href={link} target="_blank" rel="noopener">
+						<img src={image} alt="" />
+					</a>
+				{:else}
+					<img src={image} alt="" />
+				{/if}
 			{/each}
 		</div>
 	</article>
